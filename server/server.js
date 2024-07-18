@@ -181,9 +181,6 @@ app.get("/checkEmail/:email", (req, res) => {
 // Login
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
-  const salt = bcrypt.genSaltSync(saltRounds);
-  const hash = bcrypt.hashSync(password, salt);
-  console.log(`salt: ${salt}, hash: ${hash}`);
   let sql = `SELECT * FROM user WHERE email='${email}'`;
   db.query(sql, async (err, results) => {
     console.log('Query executed');
