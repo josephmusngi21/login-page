@@ -79,3 +79,5 @@ TODO Need to make confirm password work
 
 ### Resources
 https://www.npmjs.com/package/bcrypt
+https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications
+https://alexanderleon.medium.com/implement-email-authentication-with-react-restful-api-7e389555e9f4
