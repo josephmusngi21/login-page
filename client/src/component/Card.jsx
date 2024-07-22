@@ -11,9 +11,7 @@ function Card() {
   };
 
   return (
-    <div id='Card' className={styles.container}>
-      <div id='top'></div>
-      
+    <div id='Card' className={styles.container}>      
       {formType === 'login' ? <Login /> : <Register />}
       
       <button id='register' onClick={handleButtonClick} className={styles.button}>

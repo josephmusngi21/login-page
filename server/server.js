@@ -183,7 +183,6 @@ app.post("/login", (req, res) => {
   const { email, password } = req.body;
   let sql = `SELECT * FROM user WHERE email='${email}'`;
   db.query(sql, async (err, results) => {
-    console.log('Query executed');
     if (err) {
       console.log('Database error:', err);
     }

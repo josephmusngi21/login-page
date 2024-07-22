@@ -70,18 +70,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### TODO
-<!-- TODO encodeEmail
-const email = 'josephmusngi7@gmail.com';
-const encodedEmail = encodeURIComponent(email);
-const url = `http://localhost:4000/login/${encodedEmail}`;
 
-TODO decodeEmail to reverse email and check if email is in database
-
-Probably do ths in the jsx
-
+<!-- 
 TODO To make it easier to check if email and password match database
 TODO Need to make authentication 
-TODO Need to make confirm password work
+TODO Need to make confirm password work 
 -->
 
 ### Resources
