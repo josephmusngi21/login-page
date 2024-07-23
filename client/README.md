@@ -1,83 +1,41 @@
-# Getting Started with Create React App
+# 🚀 React Authentication App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple authentication app built with **React** and **Express**. It includes a registration and login system, with password validation and email checking.
 
-## Available Scripts
+## 🎯 Getting Started
 
-In the project directory, you can run:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm start`
+### 📋 Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js
+- npm
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🛠️ Installing
 
-### `npm test`
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install NPM packages
+npm install
 
-### `npm run build`
+### 🎮 Usage
+The project includes two main components:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Register: This component allows new users to register. It checks if the passwords match and if the password is secure (must contain at least one uppercase letter and one other character). It also checks if the email already exists in the database.
+Login: This component allows users to log in using their email and password.
+The server-side code is written in Express and it connects to a MySQL database. It includes routes for creating the database and user table, adding new users, fetching users, updating user information, deleting users, and more.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🤝 Contributing
+Any contributions you make are greatly appreciated.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+📞 Contact
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### TODO
-
-<!-- 
-TODO To make it easier to check if email and password match database
-TODO Need to make authentication 
-TODO Need to make confirm password work 
--->
-
-### Resources
-https://www.npmjs.com/package/bcrypt
-https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications
-https://alexanderleon.medium.com/implement-email-authentication-with-react-restful-api-7e389555e9f4
+Contact
+Joseph Musngi - josephmusngi7@gmail.com
