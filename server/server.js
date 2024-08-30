@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Define  database name
-const dbName = "nodeserver";
+const dbName = "testServer";
 
 const saltRounds = 10;
 
@@ -45,13 +45,20 @@ db.connect((err) => {
     console.log(`Connected to the ${dbName} database.`);
   }
 
-  let sql =
-    "CREATE TABLE IF NOT EXISTS user(id int AUTO_INCREMENT, email VARCHAR(255), password VARCHAR(255), PRIMARY KEY(id))";
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    console.log(result);
-    console.log("User table created");
-  });
+  let sql = `
+  CREATE TABLE IF NOT EXISTS user(
+    id int AUTO_INCREMENT,
+    email VARCHAR(255) UNIQUE,
+    password VARCHAR(255),
+    PRIMARY KEY(id)
+  )
+`;
+db.query(sql, (err, result) => {
+  if (err) throw err;
+  console.log(result);
+  console.log("User table created");
+});
+
 });
 
 //create database //! dont need cause it should have made it already
